@@ -8,9 +8,15 @@
 use yii\db\ActiveRecord;
 
 class User extends ActiveRecord
+//class User extends ActiveRecord implements \yii\web\IdentityInterface
 {
     public function findIdentity($id)
     {
         return $this->findIdentity($id);
+    }
+
+    public function getId()
+    {
+        return $this->getId();
     }
 }

@@ -10,6 +10,7 @@ $config = [
         'authManager' => [
             // 'class' => 'yii\rbac\PhpManager', // or use 'yii\rbac\DbManager'
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
+            'defaultRoles' => ['admin', 'author'],
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
